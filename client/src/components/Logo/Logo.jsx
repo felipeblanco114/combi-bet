@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <div className='logo'>
+    <header className='logo'>
         <h1>
             <span>
                 <Link to='/'>Betimba!</Link>
             </span>
         </h1>
-    </div>
+    </header>
   )
 }
 
