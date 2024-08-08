@@ -15,6 +15,10 @@
     font-size: 4rem;
     text-align: center;
 }
+.combinadas h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
 .container-card {
     margin-top: 0rem;
     width: 40rem;
@@ -88,6 +92,10 @@ ul, li {
         height: 4rem;
         font-size: 1rem;
         cursor: default;
+    }
+    .combinadas h3 {
+        font-size: 1.8rem;
+        text-align: center;
     }
 }
 
