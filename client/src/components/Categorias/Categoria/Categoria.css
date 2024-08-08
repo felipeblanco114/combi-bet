@@ -1,0 +1,93 @@
+.hover-button {
+    position: relative;
+    background-image: url('https://img.freepik.com/foto-gratis/textura-cemento_1194-6501.jpg?t=st=1722877284~exp=1722880884~hmac=9b9f8a99e3aca1b48a87ea1c79dbc6ea4f1609c122e98239e768c4f2b8ca3c69&w=996');
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    width: 96%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255,255,255);
+    margin: .8rem;
+    cursor: pointer;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  
+  .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color:#ffd64fb0;
+    z-index: 0;
+    transition: width 0.9s ease;
+  }
+  
+  .button-text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hover-button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+
+  .porcentaje {
+    font-size: 1rem;
+    position: absolute;
+    top: 3rem;
+    font-weight: 700;
+    display: none;
+    left: 92%;
+    transition: 0.1s;
+    animation: rightToLeft .4s;
+  }
+
+  @keyframes rightToLeft {
+    0% {
+      opacity: 0;
+      left: 100%;
+      transition: .1s;
+      
+    }
+    100% {
+      opacity: 1;
+      left: 92%;
+      transition: .1s;
+    }
+  }
+
+
+  .hover-button:hover .porcentaje {
+    display: block;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hover-button {
+      padding: 0.25em 0.75em;
+      height: 10%;
+      font-size: 1.6rem;
+    }
+
+  }
+  

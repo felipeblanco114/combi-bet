@@ -1,0 +1,97 @@
+.logo {
+    position: fixed;
+    margin: 0rem;
+    z-index: 9999;
+    margin-left: 1rem;
+    letter-spacing: -1px;
+    margin-top: -.6rem;
+}
+
+.logo h1 {
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.logo h1 span {
+    font-size: 3rem;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(#000, #000);
+    background-size: 100% 0px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    padding: .0rem 1rem;
+    transition: background-size .4s, background-position .3s ease-in-out;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.6px;
+  }
+  .logo h1 span a {
+    color: #000;
+  }
+  .logo h1 span a:hover {
+    color: #ffd64f;
+  }
+  
+  
+  .logo h1 span:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .4s, background-size .3s ease-in-out;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.6px;
+}
+
+@media only screen and (max-width: 576px) {
+    .logo {
+        margin-left: 0.4rem;
+        margin-top: -1.4rem;
+    }
+    .logo h1 span {
+        font-size: 2rem;
+        padding: 0 0;
+        -webkit-text-stroke-width: 1px;
+    }
+    .logo h1 span:hover {
+        background-size: 0 0;
+        background-position: 0% 100%;
+        transition: background-position .4s, background-size .3s ease-in-out;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        color: #000;
+    }
+    .logo h1 span a:hover {
+        background-size: 100% 100%;
+        background-position: 0% 100%;
+        transition: background-position .4s, background-size .3s ease-in-out;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        color: #000;
+    }
+}
+
+/* .logo::after {
+    content: '';
+    position: absolute;
+    height: 40%; 
+    width: 2px; 
+    background-color: #000;
+    top: 1.47rem;
+    left: 100%; 
+    transform: translateX(20px); 
+    opacity: 0;
+    animation: appear .6s forwards ease-in-out;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      left: 100%; 
+      transform: rotate(160deg);
+    }
+    100% {
+      opacity: 1;
+      left: calc(100% - 5%); 
+      transform: rotate(7deg);
+    }
+  } */
